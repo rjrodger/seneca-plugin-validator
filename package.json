@@ -1,0 +1,22 @@
+{
+  "name": "seneca-plugin-validator",
+  "version": "0.0.1",
+  "description": "seneca-plugin-validator",
+  "main": "plugin-validator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjrodger/seneca-plugin-validator.git"
+  },
+  "author": "Richard Rodger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rjrodger/seneca-plugin-validator/issues"
+  },
+  "homepage": "https://github.com/rjrodger/seneca-plugin-validator#readme",
+  "dependencies": {
+    "code": "^4.1.0"
+  }
+}
