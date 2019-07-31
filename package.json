@@ -1,6 +1,6 @@
 {
   "name": "seneca-plugin-validator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "seneca-plugin-validator",
   "main": "plugin-validator.js",
   "scripts": {
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/rjrodger/seneca-plugin-validator#readme",
   "dependencies": {
     "@hapi/code": "^6.0.0",
+    "@hapi/joi": "^15.1.0",
     "@hapi/lab": "^19.1.0",
     "coveralls": "^3.0.5",
     "prettier": "^1.18.2"
