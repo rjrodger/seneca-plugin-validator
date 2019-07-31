@@ -1,10 +1,16 @@
 {
   "name": "seneca-plugin-validator",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "seneca-plugin-validator",
   "main": "plugin-validator.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node plugin-validator.js",
+    "prettier": "prettier --write *.js lib/*.js bin/*.js test/*.js",
+    "coveralls": "lab -s -P test -r lcov | coveralls",
+    "clean-npm": "rm -rf node_modules package-lock.json",
+    "clean-yarn": "rm -rf node_modules yarn.lock",
+    "repo-tag": "REPO_VERSION=`node -e \"console.log(require('./package').version)\"` && echo TAG: v$REPO_VERSION && git commit -a -m v$REPO_VERSION && git push && git tag v$REPO_VERSION && git push --tags;",
+    "repo-publish": "npm run prettier && npm test && npm run repo-tag && npm publish --access public"
   },
   "repository": {
     "type": "git",
@@ -17,6 +23,9 @@
   },
   "homepage": "https://github.com/rjrodger/seneca-plugin-validator#readme",
   "dependencies": {
-    "code": "^4.1.0"
+    "@hapi/code": "^6.0.0",
+    "@hapi/lab": "^19.1.0",
+    "coveralls": "^3.0.5",
+    "prettier": "^1.18.2"
   }
 }
