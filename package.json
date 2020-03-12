@@ -1,6 +1,6 @@
 {
   "name": "seneca-plugin-validator",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "seneca-plugin-validator",
   "main": "plugin-validator.js",
   "scripts": {
